@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(252, 188, 11, 0.815);
+    padding-left: 30px;
+}
+.avatar {
+    width: 250px;
+    display: block;
+    float: left;
+    border-radius:10px;
+    
+}
+
+.cart {
+    float: left;
+    padding-left: 20px;
+}
+
+.my-name {
+    font-size: 30px;
+
+}
+
+.date {
+    float: left;
+    clear: both;
+    padding-top: 20px;
+}
+
+i {
+    margin-left: 5px;
+}
+
+.skills {
+    clear: both;
+}
+
+.radio {
+    clear: both;
+    padding-top: 20px;
+}
+
+.title {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+#bad,#balance,#good,#great {
+    margin-right: 7px;
+}
+
+.list {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.main_skills {
+    margin-top: 20px;
+}
+
+#know_eng,#salary,#skillss,#bro {
+    margin-right: 7px;
+}
+
