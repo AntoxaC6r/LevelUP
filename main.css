@@ -6,28 +6,47 @@
 h1 {
     padding-top: 20px;
     margin-bottom: 15px;
+    font-family: 'Shadows Into Light', cursive;
+
 }
 .wrapper {
+    display: flex;
+    flex-direction: column;
     width: 1200px;
     margin: 0 auto;
     background-color: rgba(252, 188, 11, 0.815);
-    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jura', sans-serif;
+    background: url(https://i.mycdn.me/image?id=864104485919&t=3&plc=WEB&tkn=*-i-pXMepL8nBekI3_gTqbKuFiAw);
+    background-size: cover;
 }
 .avatar {
     width: 250px;
     display: block;
     float: left;
     border-radius:10px;
-    
 }
 
+.avatar:hover {
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    transition: 200ms;
+  }
+    
+  
+
+
 .cart {
-    float: left;
-    padding-left: 20px;
+    text-align: center;
 }
 
 .my-name {
+    display: block;
     font-size: 28px;
+    
+
 
 }
 
@@ -64,6 +83,13 @@ i {
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+ul li:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 200ms;
 }
 
 .main_skills {
