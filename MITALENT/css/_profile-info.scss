@@ -1,0 +1,126 @@
+.second-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+    height: 1188px;
+    position: relative;
+    padding: 120px;
+
+    .profile-img {
+        width: 649px;
+        height: 948px;
+        position: absolute;
+        left: 120px;
+        top: 120px;
+        background-color: #e2e8e8;
+    }
+
+    .tabs {
+        position: absolute;
+        top: 211px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 4;
+        letter-spacing: 2.4px;
+        color: #696970;
+        margin-left: 110px;
+        text-align: center;
+    }
+
+    .tabs a {
+        
+        text-decoration: none;
+        margin-right: 60px;
+        font-family: nunito-semibold;
+
+        &.active,&:hover {
+            font-family: nunito-extrabold;
+            border-bottom: 2px solid $primary-color;
+            text-decoration: none;
+        }
+        
+        &:visited {
+            color: #696970;
+        }
+
+        &:visited:first-child {
+            color: $primary-color;
+        }
+    }
+
+    .tabs a:last-child {
+        margin-right: 0;
+    }
+
+    .profile-info {
+        width: 481px;
+        height: 605px;
+        position: absolute;
+        margin-left: 110px;
+        margin-top: -50px;
+
+    }
+
+    .profile-info h2 {
+        font-family: poppins-regular;
+        font-size: 60px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.32;
+        letter-spacing: normal;
+        color: $primary-color;
+        margin-bottom:38px;
+        margin-top:0;
+    }
+
+    .about-person {
+        display: inline-block;
+        font-family: poppins-regular;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: $primary-color;
+        margin-bottom: 31px;
+    }
+
+    .achievement {
+        font-family: nunito-semibold;
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.5;
+        letter-spacing: normal;
+        color: $primary-color;
+        margin-left: 20px;
+    }
+
+    .profile-info p {
+        font-family: nunito-regular;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        color: #767679;
+        margin: 0;
+    }
+
+    .social-icons {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 120px;
+        // transform:translateX(50%);
+        padding-right: 230px;
+        padding-bottom: 90px;
+    }
+    
+    .social-icons i {
+        margin-bottom: 40px;
+    }
+}
