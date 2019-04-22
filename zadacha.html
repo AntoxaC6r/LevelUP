@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Задача первая: -->
+
+    <script>
+        let aaa = '';
+        for(i = 1;i <= 7;i++) {
+            console.log(aaa+='#');
+        }    
+    </script>
+
+    <!-- Задача вторая: -->
+
+    <script>
+        function fizzBuzz (num) {
+            for (let i = 1;i <= num;i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                        console.log('FizzBuzz');
+                    } else if (i % 3 === 0) {
+                        console.log('Fizz');
+                    } else if (i % 5 === 0) {
+                        console.log('Buzz');
+                    } else {
+                        console.log(i);
+                }
+            }
+        }
+        fizzBuzz(100);
+    </script>
+
+    <!-- Задача третья: -->
+
+    <script>
+        let size = 8;
+        let diez = "#";
+        let string = '';
+        for (let i = 0; i<size; i++){
+            for (let j = 0; j<size; j++){
+                if (i%2===0){
+                    if (j%2===0){
+                        string+=diez;
+                }else{
+                    string+=' ';
+                } 
+                }else{
+                    if (j%2===1){
+                        string+=diez;
+                    }else{
+                        string+=' ';
+                    }
+                }   
+            }
+        string+="\n";
+        }
+        console.log(string);
+    </script>
+
+    <!-- Задача четвертая: -->
+
+    <script>
+        (function () {
+        function isEven(num) {
+            if (num == 0) return true;
+            if (num == 1) return false;
+            return isEven(num - 2 * (num > 0 ? 1 : -1));
+        }
+    
+        console.log(isEven(50)); 
+        console.log(isEven(75)); 
+        console.log(isEven(-1)); 
+    })();
+
+    </script>
+
+    <!-- Задача пятая: -->
+
+    <script>
+            function range(start, end, step) {
+                let i = start;
+                arr = [];
+                    if (!step) {
+                        step = 1;
+                }
+                    if (step < 0) {
+                        start = end;
+                        end = i;
+                }
+                for (; i >= start && i <= end; i += step) {
+                    arr.push(i);
+            }
+        return arr;
+    }
+    console.log(range(1,50,2));
+
+    function sum1(arr) {
+        let counter = arr[0];
+        for (let i = arr[0]; i < arr.length; i++) {
+            counter += arr[i];
+        }
+        return counter;
+    }
+
+    console.log(sum1(arr));
+    </script>
+
+    <!-- Задача шестая -->
+
+    <script>
+         function reverseArray(arr) {
+            return arr.reverse();
+        }
+        console.log(reverseArray([1,2,3]));
+
+        let newArr = [1, 2, 3, 4, 5];
+    
+        function reverseArrayInPlace(arr) {
+            for (let i = arr.length; i--;) {
+                arr.push(arr[i]);
+        }
+        return arr;
+    }
+        console.log(reverseArrayInPlace(newArr));
+    </script>
+
+
+
+    
+
+</body>
+</html>
