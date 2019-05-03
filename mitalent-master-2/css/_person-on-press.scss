@@ -1,0 +1,143 @@
+.third-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+    padding-top: 0;
+
+    .person-on-press {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        .inner-press-info {
+            padding: 50px;
+            width: 80%;
+            height: 70%;
+
+            h2 {
+                font-family: poppins-regular;
+                font-size: 40px;
+                color: $primary-color;
+                font-weight: normal;
+            }
+        }
+
+        
+
+        .first-art {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            
+            .first-art-span1 {
+                font-family: poppins-medium;
+                font-size: 14px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: $primary-color;
+            }
+
+            .first-art-span2 {
+                font-family: nunito-regular;
+                font-size: 12px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #77777e;
+            }
+        }
+
+
+        .first-art-img {
+            width: 150px;
+            height: 100px;
+            background-color:#e2e8e8;
+            margin-right: 20px;
+            
+        }
+
+        
+
+    }
+
+    .second-art {
+        display: flex;
+        justify-content: flex-start;
+
+
+        .second-art-span1 {
+            font-family: poppins-medium;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #87bbbc;
+        }
+
+        .second-art-span2 {
+            font-family: nunito-regular;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #77777e;
+        }
+
+        .second-art-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 100px;
+            background-color: #b4d3d3;
+            margin-right: 20px;
+            
+
+        }
+
+    }
+    .person-on-press-img {
+        width: 50%;
+        height: 700px;
+        background-color:#e2e8e8;
+    }
+
+    .inner-press-info a {
+        display: inline-block;
+        font-family: nunito-extrabold;
+        font-size: 10px;
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.14;
+        letter-spacing: 2.8px;
+        text-align: left;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $primary-color;
+        margin-top: 30px;
+        margin-right: 20px;
+
+        &:hover {
+            color: #77777e;
+        }
+    }
+}
+
+

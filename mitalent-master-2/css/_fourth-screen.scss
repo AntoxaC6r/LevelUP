@@ -1,0 +1,147 @@
+.fourth-screen-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+     h2 {
+        font-family: poppins-regular;
+        font-size: 40px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: normal;
+        margin-top:0;
+     }
+    .fourth-screen-title {
+        width: 300px;
+    }
+
+    .fourth-screen-explore {
+        width: 420px;
+
+        p {
+            display: inline-block;
+            font-family: nunito-regular;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.88;
+            letter-spacing: normal;
+            text-align: left;
+            color: #767679;
+            margin: 0;
+            
+        }
+
+         a {
+            display: inline-block;
+            font-family: nunito-extrabold;
+            font-size: 10px;
+            font-weight: 800;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.14;
+            letter-spacing: 2.8px;
+            text-align: left;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $primary-color;
+            margin-top: 20px;
+        
+    
+            &:hover {
+                color: #77777e;
+            }
+        }
+    }
+}
+
+.fourth-screen-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    padding-top: 80px;
+
+   
+}
+.gallery-container {
+    display: grid;
+    width: 85vw;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-item {
+    background-color:#e2e8e8;
+    height: 55vh;
+    background-position: center;
+    background-size: auto 100%;
+
+    &:hover .item-inner {
+        display: block;
+    }
+}
+
+.item-inner {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 4, 9, 0.81);
+}
+
+.round-button {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #b4d3d3;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-info {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+
+    
+
+    .person-name {
+        font-family: poppins-regular;
+        font-size: 20px;
+        letter-spacing: 0.6px;
+        margin-bottom: 7px;
+    }
+
+    .person-job {
+        font-family: nunito-extrabold;
+        font-size: 8px;
+        color: #aeaeb7;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+    }
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+
+    img {
+        margin-right: 10px;
+    }
+
+   
+}
+

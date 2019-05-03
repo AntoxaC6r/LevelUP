@@ -1,0 +1,61 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.link-font {
+    @extend .nunito-extrabold;
+    font-size: 14px;
+    color: $primary-color;
+    text-decoration: unset;
+
+    &:hover {
+        color: rgba(26, 26, 29, 0.5);
+    }
+}
+
+.icon-button {
+    border: none;
+    background-color: transparent;
+    outline: unset;
+    padding: 0;
+}
+
+header {
+    right: 0;
+    position: fixed;
+    left: 0;
+    justify-content: space-between;
+    height: 32px;
+    z-index: 10;
+
+    .site-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 28px;
+    }
+
+    .left-controls {
+        margin-left: 61px;
+    }
+
+    .clients-link {
+        margin-left: 46px;
+        margin-right: 53px;
+    }
+
+    .search-controls {
+        margin-right: 66px;
+    }
+
+    .panel {
+        position: absolute;
+        top: 0;
+        width: 200px;
+        height: 400px;
+        background-color: darksalmon;
+        display: none;
+    }
+}
